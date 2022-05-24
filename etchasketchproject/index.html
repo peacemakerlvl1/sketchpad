@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang="En">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0" />
+        <link rel="stlyesheet" href="reset.css" />
+        <link rel="stlyesheet"href="stlyes.css" />
+        <title>SketchPad</title>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="title"><h1>Sketchpad</h1></div>
+            <div class="mode">Mode: Coloring</div>
+            <div class="content">
+                <div class="board"></div>
+                <div class="buttons">
+                    <button class="blackButton" onclick="changColor('black')">
+                    black
+                </button>
+                <button class="erasorButton" onclick="changColor('white')">
+                erasor
+                </button>
+                <button class="grayButton" onclick="changeColor('gray')">Gray</button>
+                <button class="randomButton" onclick="changColor('random')">Random</button>
+                <button onclick="resetBoard()">Reset</button>
+                </div>
+                <div>
+                    <input
+                    type="text"
+                    placeholder="Size of Board"
+                    value="16"
+                    onchange="changeSize(this.value)"
+                    />
+                    <button>Set Size</button>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
